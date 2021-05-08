@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Against Black</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    
+    <script>
+
+        function soundOff() {
+        var video = document.getElementById("vidOne");
+            if (video.muted === true) {
+                video.muted = false;
+            } else {
+                video.muted = true;
+                }
+        }
+
+    </script>
+
+	<style>
+        body {
+            background-color: black;
+        }
+
+        .content {
+            position: absolute;
+            left: 1259px;
+            top: 71%;
+            opacity: 0.3;
+            /* border: 1px solid white;
+            padding: 20px 40px 20px 40px; */
+            color: white;
+            font-size: 26px;
+            font-family: 'Baskervville', serif;
+        }
+
+        video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        a {
+            color:white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color:black;
+        }
+
+        p:hover {
+            color: black;
+        }
+
+	</style>
+</head>
+
+<body>
+
+    <!-- The video -->
+    <video autoplay muted loop id="vidOne">
+        <source src="video/language05.mp4" type="video/mp4">
+    </video>
+
+
+    <!-- The content boxes -->
+    <div class="content"> 
+        <p onclick="soundOff()"> listen </p>
+        <p>
+            <a href="cave.html"> enter : <br>the case against black </a> <br>
+            <!-- <a href="manifesto.html"> about </a> <br> -->
+            <!-- <a href="references.html"> bibliography </a> -->
+        </p>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Baskervville&family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+        <script>
+
+            function soundOff() {
+            var video = document.getElementById("vidOne");
+                if (video.muted === true) {
+                    video.muted = false;
+                } else {
+                    video.muted = true;
+                    }
+            }
+    
+        </script>
+
+        <style>
+
+        video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        div {
+            position: absolute;
+            display: block;
+			overflow: scroll;
+            width: 400px;
+            height: 750px;
+            left: 10%;
+            top: 10%;
+            opacity: 0.5;
+            color: white;
+            font-size: 18px;
+            font-family: 'Baskervville', serif;
+        }
+
+        a {
+            color:white;
+            text-decoration: none;
+			opacity: 0.9;
+        }
+
+        a:hover {
+            color:black;
+			opacity: 0.3;
+        }
+
+        </style>
+     <head>
+
+
+<body>
+    <!-- The video -->
+    <video autoplay muted loop id="vidOne">
+        <source src="video/afraidofthedark2.mp4" type="video/mp4">
+    </video>
+
+    <div> 
+        <p onclick="soundOff()"> click to hear </p>
+        <p id="intro"> 
+
+            Against Black is an experimental / experiential meditation on the nature, politics, and mythology of the colour Black. It started as a response to the current atmosphere prevalent in many places around the world. From the Black Lives Matter movements, colonial and anti-colonial narratives that permeate our cultures, colourism, fear of unknowns, to the politics of aesthetics, and the pinnacle of grace and class, Black - the colour and the concept - encompasses all these multitudes. 
+            <br><br>
+            I personally felt swept up in the nuances of the idea, the way it colours my own life or obscures it. I chose to focus my project on the colour Black as an anchor point, or a rudder, to further explore some difficult and dark realities. Along with the colour itself, I had two other anchors: Carl Jung’s philosophies and in particular his final volume compilation : Man and His Symbols; and secondly John Berger’s analysis of the disguised presence of ( renaissance ) style oil painting in modern day advertising and popular culture, as outlined in his series Ways of Seeing. 
+            <br><br>
+            For these reasons, the project came together as a collection of classical art, sculpture, and other images which have existed for at least a generation before ours, some for dozens or more, and have persisted through time and imagination. These images of monsters and demons, like John Berger’s posing women with femininity, have coloured our idea of darkness and the unknown, and have populated what Carl Jung refers to as the ‘collective unconscious’. 
+            <br><br>
+            <a href="cave.html">Enter: The Case Against Black to have a stroll though a constellation of human projections that all have one thing in common: Black.</a>
+            <br><br>
+            This project follows a personal set of rules: No inciting fear | No talk of others, only us. | Nothing is wrong, it just is. 
+        
+        </p>
+
+        <a href="index.html"> back </a>
+    </div>
+
+</body>
+</html>
